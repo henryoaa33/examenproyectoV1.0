@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace examenproyectoV1.Models
 {
-    public interface Icaracteristicas
+    public interface Iporcioncombustible
     {
         string capacidaddecombustible();
 

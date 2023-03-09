@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace examenproyectoV1.Models
 {
-    public class Helicoptero : Aereonave, Icaracteristicas
+    public class Helicoptero : Aereonave, Iporcioncombustible
     {
 
         public string capacidaddecombustible()
