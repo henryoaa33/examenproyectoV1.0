@@ -11,6 +11,7 @@ namespace examenproyectoV1.Models
         public double capacidadcombustible { get; set; }
         public double distanciarecorrida { get; set; }
         public double combustible { get; set; }
+        public double consumo { get; set; }
 
 
         public double CalcularConsumo()

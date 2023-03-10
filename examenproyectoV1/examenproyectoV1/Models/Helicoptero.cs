@@ -30,8 +30,6 @@ namespace examenproyectoV1.Models
 
         public int cantidaddeaspas { get; set; }
 
-        public double consumo { get; set; }
-
     }
 }
 

@@ -30,7 +30,7 @@ namespace examenproyectoV1.Models
 
         public int capacidadcarga { get; set; }
 
-        public double consumo { get; set; }
+        
 
     }
 }

@@ -29,7 +29,5 @@ namespace examenproyectoV1.Models
         }
 
         public int cantidadderotores { get; set; }
-
-        public double consumo { get; set; }
     }
 }

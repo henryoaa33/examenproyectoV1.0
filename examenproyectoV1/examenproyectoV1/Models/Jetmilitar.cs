@@ -29,7 +29,6 @@ namespace examenproyectoV1.Models
         }
 
         public int capacidadmisiles { get; set; }
-        public double consumo { get; set; }
 
     }
 }

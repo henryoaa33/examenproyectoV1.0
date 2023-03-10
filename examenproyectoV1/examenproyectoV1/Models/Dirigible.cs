@@ -28,7 +28,5 @@ namespace examenproyectoV1.Models
         }
 
         public int capacidadhelio { get; set; }
-
-        public double consumo { get; set; }
     }
 }

@@ -31,7 +31,7 @@ namespace examenproyectoV1
 
         public int capacidadpasajeros { get; set; }
 
-        public double consumo { get; set; }
+       
 
     }
 }
