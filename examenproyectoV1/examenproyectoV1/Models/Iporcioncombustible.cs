@@ -8,7 +8,7 @@ namespace examenproyectoV1.Models
 {
     public interface Iporcioncombustible
     {
-        string capacidaddecombustible();
+        double capacidaddecombustible();
 
 
     }

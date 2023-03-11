@@ -9,23 +9,33 @@ namespace examenproyectoV1.Models
     public class Jetmilitar : Aereonave, Iporcioncombustible
     {
 
-        public string capacidaddecombustible()
+        public double capacidaddecombustible()
         {
-            return "Capacidad de combustible 9,000 galones.";
+            return 9000;
         }
+        public override double ConsumoDespegue() => consumodespegue * 0.10;
         public override string Despegar()
         {
-            return "El jetmilitar está despegando.";
+            double consumoDespegue = ConsumoDespegue();
+            consumodespegue -= consumoDespegue;
+            return "El jet militar está despegando. Se han consumido " + consumoDespegue.ToString() + " galones de combustible.";
         }
 
+
+        public override double ConsumoVolar() => consumovolar * 0.80;
         public override string Volar()
         {
-            return "El jetmilitar está volando.";
+            double consumoVolar = ConsumoVolar();
+            consumovolar -= consumoVolar;
+            return "El jet militar está volando. Se han consumido " + consumoVolar.ToString() + " galones de combustible.";
         }
 
+        public override double ConsumoAterrizar() => consumoaterrizar * 0.10;
         public override string Aterrizar()
         {
-            return "El jetmilitar está aterrizando.";
+            double consumoAterrizar = ConsumoAterrizar();
+            consumoaterrizar -= consumoAterrizar;
+            return "El jet militar está aterrizando. Se han consumido " + consumoAterrizar.ToString() + " galones de combustible.";
         }
 
         public int capacidadmisiles { get; set; }

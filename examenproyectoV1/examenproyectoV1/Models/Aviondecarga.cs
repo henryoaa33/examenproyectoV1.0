@@ -9,23 +9,35 @@ namespace examenproyectoV1.Models
     public class Aviondecarga : Aereonave, Iporcioncombustible
     {
 
-        public string capacidaddecombustible()
+        public double capacidaddecombustible()
         {
-            return "Capacidad de combustible 40,000 galones.";
+            return 40000;
         }
+
+
+        public override double ConsumoDespegue() => consumodespegue * 0.10;
         public override string Despegar()
         {
-            return "El aviondecarga está despegando.";
+            double consumoDespegue = ConsumoDespegue();
+            consumodespegue -= consumoDespegue;
+            return "El avión de carga está despegando. Se han consumido " + consumoDespegue.ToString() + " galones de combustible.";
         }
 
+
+        public override double ConsumoVolar() => consumovolar * 0.80;
         public override string Volar()
         {
-            return "El aviondecarga está volando.";
+            double consumoVolar = ConsumoVolar();
+            consumovolar -= consumoVolar;
+            return "El avión de carga está volando. Se han consumido " + consumoVolar.ToString() + " galones de combustible.";
         }
 
+        public override double ConsumoAterrizar() => consumoaterrizar * 0.10;
         public override string Aterrizar()
         {
-            return "El aviondecarga está aterrizando.";
+            double consumoAterrizar = ConsumoAterrizar();
+            consumoaterrizar -= consumoAterrizar;
+            return "El avión de carga está aterrizando. Se han consumido " + consumoAterrizar.ToString() + " galones de combustible.";
         }
 
         public int capacidadcarga { get; set; }
